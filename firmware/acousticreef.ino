@@ -1,20 +1,20 @@
 /*
   AcousticReef
-  ------------
+  Low-Cost Bio-Acoustic Monitoring System
 
-  Low-cost bio-acoustic monitoring prototype
-  ESP32 firmware
+  ESP32 prototype firmware.
 
-  Current firmware stage:
-  - Initialise the acoustic input
-  - Sample the analogue signal
-  - Calculate basic signal characteristics
-  - Output measurements through Serial Monitor
+  Current stage:
+  - Reads an analogue acoustic signal
+  - Collects a fixed sample window
+  - Calculates basic signal measurements
+  - Outputs measurements through Serial Monitor
 
-  NOTE:
-  The acoustic input pin is a temporary hardware configuration.
-  Change AUDIO_INPUT_PIN after the actual hydrophone/signal-conditioning
-  circuit and ESP32 wiring are finalized.
+  Future development:
+  - Final hydrophone interface
+  - Signal conditioning integration
+  - Data logging
+  - Acoustic signal processing
 */
 
 #include <Arduino.h>
