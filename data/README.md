@@ -3,15 +3,19 @@
 AcousticReef is intended to collect underwater acoustic measurements for
 examining the surrounding underwater soundscape.
 
+---
+
 ## Data Collected
 
-The prototype firmware currently records basic measurements from the
+The current prototype firmware records basic measurements from the
 conditioned acoustic signal, including:
 
 - Average ADC value
 - Minimum sampled value
 - Maximum sampled value
 - Peak-to-peak amplitude
+
+---
 
 ## Data Format
 
@@ -27,6 +31,8 @@ A possible data structure is:
 |---|---:|---:|---:|---:|
 | Example | Example | Example | Example | Example |
 
+---
+
 ## Data Analysis
 
 Collected measurements can be used to investigate changes in acoustic
@@ -35,7 +41,11 @@ activity over time.
 More advanced acoustic features and analysis methods will be added as the
 prototype develops.
 
+---
+
 ## Current Status
 
-No field dataset is included in this repository yet. Data files will be
-added after experimental testing produces suitable recordings.
+No field dataset is included in this repository yet.
+
+Data files will be added after experimental testing produces suitable
+recordings.
