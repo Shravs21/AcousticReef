@@ -13,15 +13,34 @@ below.
 | Battery | 1 | Provides power for the monitoring system |
 | Waterproof enclosure | 1 | Protects the electronics during deployment |
 
+---
+
 ## Hardware Architecture
 
 The basic signal path is:
 
-Underwater acoustic environment
-→ Hydrophone
-→ Signal conditioning
-→ ESP32
-→ Data storage / processing
+```text
+Underwater Acoustic Environment
+              ↓
+          Hydrophone
+              ↓
+      Signal Conditioning
+              ↓
+             ESP32
+              ↓
+     Data Storage / Processing
+```
+The hydrophone captures underwater acoustic signals. The signal-conditioning
+stage prepares the signal for acquisition by the ESP32.
 
-The final component specifications, pin assignments, power requirements,
-and enclosure design will be documented as the prototype is developed.
+The ESP32 performs initial signal acquisition and processing before the
+measurements are stored or analysed.
+
+## Current Hardware Status
+
+The hardware architecture is currently at the prototype and development
+stage.
+
+Final component specifications, pin assignments, power requirements,
+signal-conditioning design, and enclosure details will be documented as
+the hardware is developed and tested.
